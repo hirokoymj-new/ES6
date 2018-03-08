@@ -1,7 +1,7 @@
 # Const
 
 - Const declared immutable variables.
-- The variable is immutable.
+- The variable is mutable.
 - But for an object, we can still change properties of a const object.
 - To make an object immutable we use the Object.freeze(...) function.
 
