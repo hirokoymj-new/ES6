@@ -21,6 +21,9 @@ const foo;
 ```js
 const foo=1;
 foo=2;
+```
+
+```js
 //TypeError: Assignment to constant variable.
 ```
 
@@ -34,7 +37,11 @@ function test(){
   console.log(tmp);
 }
 
-test(); //tmp is not defined
+test(); 
+```
+
+```js
+//tmp is not defined
 ```
 
 **Example 4**
@@ -45,7 +52,10 @@ test(); //tmp is not defined
 ```js
 let foo = "foo";
 foo="moo";
-console.log(foo); //moo
+console.log(foo); 
+```
+```js
+//moo
 ```
 
 **Example 5**
@@ -54,16 +64,27 @@ console.log(foo); //moo
 ```js
 const foo = {};
 foo['prop'] = 'moo';
-console.log(foo); //{prop: "moo"}
+console.log(foo); 
 ```
+
+```js
+//{prop: "moo"}
+```
+
+
 **Example 6**
 - **Non-strict** mode
 
 ```js
 const foo = Object.freeze({});
 foo['prop'] = 'Moo';
-console.log(foo.prop); //undefined
+console.log(foo.prop); 
 ```
+
+```js
+//undefined
+```
+
 - **Strict** mode
 
 ```js
@@ -71,5 +92,10 @@ console.log(foo.prop); //undefined
 
 const foo = Object.freeze({});
 foo['prop'] = 'Moo';
-console.log(foo.prop); //TypeError: Cannot add property prop, object is not extensible
+console.log(foo.prop); 
 ```
+
+```js
+//TypeError: Cannot add property prop, object is not extensible
+```
+
