@@ -15,9 +15,9 @@ var myArray = [
 ];
 ```
 
-- Answer
+### Answer
 
-**Syntax**
+- Syntax
 ```js
 var new_array = arr.map(function (currentValue, index){ return something})
 ```
@@ -41,7 +41,7 @@ var myArray = [
 ];
 ```
 
-- Answer
+### Answer
 ```js
 var blueIndex = myArray
     .map(function (element) {return element.color;}) //[ 'red', 'blue', 'green', 'yellow' ]
@@ -56,7 +56,7 @@ console.log(blueIndex) //1
 var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
 ```
 
-- Answer
+### Answer
 ```js
 - Array.prototype.reduce(function(accumlator, currentValue), initialValue);
 ```
@@ -83,7 +83,7 @@ var a1 = [2,5,6,9];
 var a2 = [1,2,3,29];
 ```
 
-- Answer 1
+### Answer 1
 ```js
 function mergeTwoArray(array1, array2){
 	var output = array2;
@@ -99,7 +99,7 @@ function mergeTwoArray(array1, array2){
 console.log(mergeTwoArray(a1, a2)); //[ 1, 2, 3, 29, 5, 6, 9 ]
 ```
 
-- Answer 2
+### Answer 2
 ```js
 var array3 = a1.concat(a2); //[2, 5, 6, 9, 1, 2, 3, 29 ]
 var output = array3.reduce(function(accu, val){
@@ -137,7 +137,7 @@ var friends = [{
 }];
 ```
 
-- Answer
+### Answer
 ```js
 var bookList = friends.reduce(function(acc, value){
 	return acc.concat(value.books);
