@@ -12,7 +12,9 @@
 ```js
 const foo;
 ```
+```js
 //SyntaxError: Missing initializer in const declaration
+```
 
 **Example 2**
 - Const variable isn't supposed to change over time so we're not allowed to give a different.
