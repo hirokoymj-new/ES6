@@ -3,7 +3,7 @@
 - Source: https://github.com/hirokoymj/Algorithm-Array
 
 
-#### Example 1
+## Example 1
 
 - Create new array from myArray - `[ 'red', 'blue', 'green', 'yellow' ]`
 ```js
@@ -29,7 +29,7 @@ var newArray = myArray.map(function (element) {
 console.log(newArray); //[ 'red', 'blue', 'green', 'yellow' ]
 ```
 
-#### Example 2
+## Example 2
 
 - What is the index for "color: blue" in myArray.
 ```js
@@ -49,7 +49,7 @@ var blueIndex = myArray
 console.log(blueIndex) //1
 ```
 
-#### Example 3
+## Example 3
 - Flatten and convert names array to Object like `{'Alice':2, 'Bob':1, 'Tiff':1, 'Bruce':1}`
 
 ```js
@@ -75,7 +75,7 @@ var countName = names.reduce(function(obj, current){
 ```
 
 
-#### Example 4
+## Example 4
 - Create new function to merge two array without duplicate value.
 
 ```js
@@ -112,7 +112,7 @@ var output = array3.reduce(function(accu, val){
 console.log(output.sort()); //[ 1, 2, 29, 3, 5, 6, 9 ]
 ```
 
-#### Example 5
+## Example 5
 
 -  Create allbooks array from friends array.
 ```js
