@@ -50,7 +50,7 @@ console.log(blueIndex) //1
 ```
 
 ## Example 3
-- Flatten and convert names array to Object like `{'Alice':2, 'Bob':1, 'Tiff':1, 'Bruce':1}`
+- Flatten and convert names array to Object like <br />`{'Alice':2, 'Bob':1, 'Tiff':1, 'Bruce':1}`
 
 ```js
 var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
