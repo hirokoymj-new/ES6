@@ -117,12 +117,7 @@ console.log(output.sort()); //[ 1, 2, 29, 3, 5, 6, 9 ]
 -  Create allbooks array from friends array.
 ```js
 allbooks = [
-   'Alphabet', 'Bible',
-   'Harry Potter',
-   'War and peace',
-   'Romeo and Juliet',
-   'The Lord of the Rings',
-   'The Shining'
+   'Alphabet', 'Bible','Harry Potter','War and peace','Romeo and Juliet','The Lord of the Rings','The Shining'
 ]
 ```
 
