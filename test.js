@@ -16,6 +16,11 @@ console.log(typeof {});
 console.log(typeof null);
 console.log(typeof NaN);
 
+console.log('=============');
+
+console.log(Array.isArray([]));
+console.log(Array.isArray({}));
+
 
 
 
