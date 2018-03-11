@@ -5,10 +5,17 @@ console.log(firstName);
 console.log(last);
 
 
-
-
 // const f = obj.first;
 // const l = obj.last;
 
 // console.log(f);
 // console.log(l);
+
+console.log(typeof []);
+console.log(typeof {});
+console.log(typeof null);
+console.log(typeof NaN);
+
+
+
+
