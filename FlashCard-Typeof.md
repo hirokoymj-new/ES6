@@ -27,3 +27,23 @@ console.log(typeof NaN);    // number
 console.log(Array.isArray([]));
 console.log(Array.isArray({}));
 ```
+
+## Q3
+```js
+typeof(1);
+typeof('a');
+typeof(true);
+typeof(undefined);
+typeof(null); 
+typeof({});
+```
+
+### Answer
+```js
+typeof(1);      // number
+typeof('a');    // string
+typeof(true);   // boolean
+typeof(undefined); //undefined
+typeof(null); // object <--- POINT
+typeof({}); // object
+```

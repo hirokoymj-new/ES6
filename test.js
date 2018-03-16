@@ -21,6 +21,11 @@ console.log('=============');
 console.log(Array.isArray([]));
 console.log(Array.isArray({}));
 
+console.log('=============');
 
-
-
+console.log( typeof(1) );
+console.log( typeof('a') );
+console.log( typeof(true) );
+console.log( typeof(undefined) );
+console.log( typeof(null) );
+console.log( typeof({}) );
