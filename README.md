@@ -1,7 +1,12 @@
-# ES6
+# ES6 
 
-- [TypeScript Setup](/TypeScriptSetup/TypeScriptSetup.md)
-- [Let](https://github.com/hirokoymj/ES6/blob/master/Let.md)
-- [Const](https://github.com/hirokoymj/ES6/blob/master/const.md)
-- [For Of](https://github.com/hirokoymj/ES6/blob/master/ForOf.md)
+- [Const](1_Const/const.md)
+- [Let](2_Let/Let.md)
+- [Fat Arrow Function](3_FatArrow/fatArrow.md)
+- [Object Destructuring](4_Object-Destructuring/Destructuring.md)
+- [Object Literal Shorthand](5_Object-Literal-Shorthand/object-literal-shorthand.md)
+- [Spread Operator](6_Spread-operator/spreadOperator.md)
+- [For of/For in](7_For-In-for-of/ForOf.md)
 
+## Typescript 
+- [Typescript Setup](#typescript-setup)
