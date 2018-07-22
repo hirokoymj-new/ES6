@@ -11,17 +11,27 @@
 
 
 ## for-in
+**Q1**
+
 ```js
 let obj = {a:1, b:2};
 
 for (let prop in obj){
   console.log(prop);
 }
-// a
-// b
 ```
 
-- **NOT** recommend to use for-in in Array because index is 'string'.
+**Q1-Answer**
+```text
+a
+b
+```
+
+<hr>
+
+**Q2**
+
+**NOT** recommend to use for-in in Array because index is 'string'.
 
 ```js
 let array = [10, 20, 30];
@@ -30,24 +40,34 @@ for (let index in array){
   console.log(index);
   console.log(typeof index); 
 }
-// 0
-// string
-// 1
-// string
-// 2
-// string
+
+```
+
+**Q2-Answer**
+```text
+0
+string
+1
+string
+2
+string
 ```
 
 ## for-of
+
+**Q3**
 
 ```js
 let array = [10, 20, 30];
 for (let value of array){
   console.log(value);
 }
-// 10
-// 20
-// 30
 ```
 
-****
+**Q3-Answer**
+
+```text
+10
+20
+30
+```

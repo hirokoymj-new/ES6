@@ -143,3 +143,26 @@ var bookList = friends.reduce(function(acc, value){
 	return acc.concat(value.books);
 }, []);
 ```
+
+## Example 6
+Return blue object in myArray - {{'color':'blue', 'name': 'blueName'}}
+```js
+var myArray = [
+	{'color':'red', 'name': 'redName'},
+	{'color':'blue', 'name': 'blueName'},
+	{'color':'green', 'name': 'greenName'},
+	{'color':'yellow', 'name': 'yellowName'}
+];
+```
+
+#### Answer
+```js
+const newArray = myArray.filter(element => element.color == 'blue');
+console.log(newArray);
+//[{'color':'blue', 'name': 'blueName'}]
+```
+
+- The `find()` method returns **the value of the first element** in the array
+
+- The `filter()` method creates **a new array** with all elements that pass the test implemented by the provided function.
+
