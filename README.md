@@ -8,5 +8,12 @@
 - [Spread Operator](6_Spread-operator/spreadOperator.md)
 - [For of/For in](7_For-In-for-of/ForOf.md)
 
-## Typescript 
-- [Typescript Setup](#typescript-setup)
+
+# React
+- [Lifecycle method](11_LifecycleMethods/lifecycleMethods.md)
+
+
+# Typescript 
+- [ES6](#es6)
+- [React](#react)
+- [Typescript](#typescript)
