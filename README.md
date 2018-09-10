@@ -10,8 +10,7 @@
 
 
 # React
-- [Lifecycle method](11_LifecycleMethods/lifecycleMethods.md)
-
+- [Lifecycle method](11_LifecycleMethods/lifecycleMethod.md)
 
 # Typescript 
 - [ES6](#es6)
