@@ -62,6 +62,19 @@ obj.sayLater(); //Asim
 - Object with fat arrow funciton for `this` value
 - Fat arrow function will be the SAME as the value of this of the outside the fat arrow function
 
+**ES5**
+```js
+let obj = {
+    name: "Asim",
+    sayLater: function() {
+        setTimeout(function(){ //ES5 function syntax
+            console.log(this.name); // What is value? 
+        }, 1000);
+    }
+};
+obj.sayLater(); //undefine
+```
+**ES6**
 ```js
 let obj = {
     name: "Asim",
@@ -74,8 +87,18 @@ obj.sayLater();
 
 **Q4-Answer**
 ```js
+// ES5
+obj.sayLater(); //undefine
+// ES6 with Fat arrow function
 obj.sayLater();//Asim
 ```
+**ES5 - `This` value** 
+With fat arrow function, unstable `This` value has been fixed.
+![this](JS_This.png)
+
+<hr />
+
+
 
 ## Udemy - fat arrow fucntion
 - **In fat arrow function `this` value is used its parents this value.**
@@ -96,6 +119,43 @@ const getFirstName = (fullname) => fullname.split(' ')[0];
 console.log(getFirstName('Mike Smith'));
 ```
 <hr>
+
+**Q5**
+```js
+const multiplier1 = {
+  numbers: [1,2],
+  multiplyBy: 3,
+  multiply(){    
+      const output = this.numbers.map(function(num){ // Not fat arrow function
+        console.log(this.multiplyBy); // undefine
+        return num * this.multiplyBy
+      });
+      return output;
+  }
+}
+multiplier1.multiply(); //?
+
+const multiplier2 = {
+  numbers: [1,2],
+  multiplyBy: 3,
+  multiply(){
+      var _self = this;   // Save "this" value HERE!!!
+      const output = this.numbers.map(function(num){ // Not fat arrow function
+        console.log(_self.multiplyBy); // undefine
+        return num * _self.multiplyBy
+      });
+      return output;
+  }
+}
+multiplier2.multiply(); //?
+```
+**Q5: Answer**
+- multiple1 is error because this is `undefine` inside map() callback function!
+```js
+console.log(multiplier1.multiply()); // [ NaN, NaN ] 
+console.log(multiplier2.multiply()); // [ 3, 6 ]
+```
+
 
 **Challenge2**
 ```js
