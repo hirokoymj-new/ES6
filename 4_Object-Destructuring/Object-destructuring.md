@@ -21,7 +21,7 @@ console.log(add({ a: 1, b: 2 }));
 
 **Example 3**
 - This is redux action generator function.
-- **How the default value 1 is set to 1.** `({incrementBy=1}={})`
+- **How the default value set to 1.** `({incrementBy=1}={})`
 >If there is an object provided and it doesn't include 'incrementBy', incrementBy sets to 1.
 If there is no object provided the default, it going to be an emplty object AND when we try to descructure empty object, we're definitely not going to have increment by, so the end result once gain is 1.
 
