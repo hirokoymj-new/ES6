@@ -98,7 +98,42 @@ With fat arrow function, unstable `This` value has been fixed.
 
 <hr />
 
-
+**Q5**
+```js
+const multiplier1 = {
+  numbers: [1,2],
+  multiplyBy: 3,
+  multiply(){    
+      const output = this.numbers.map(function(num){ // Not fat arrow function
+        console.log(this.multiplyBy); // undefine
+        return num * this.multiplyBy
+      });
+      return output;
+  }
+}
+multiplier1.multiply(); //?
+```
+```js
+const multiplier2 = {
+  numbers: [1,2],
+  multiplyBy: 3,
+  multiply(){
+      var _self = this;   // Save "this" value HERE!!!
+      const output = this.numbers.map(function(num){ // Not fat arrow function
+        console.log(_self.multiplyBy); // undefine
+        return num * _self.multiplyBy
+      });
+      return output;
+  }
+}
+multiplier2.multiply(); // ? 
+```
+**Q5: Answer**
+- multiple1 is error because this is `undefine` inside map() callback function!
+```js
+console.log(multiplier1.multiply()); // [ NaN, NaN ] 
+console.log(multiplier2.multiply()); // [ 3, 6 ]
+```
 
 ## Udemy - fat arrow fucntion
 - **In fat arrow function `this` value is used its parents this value.**
@@ -120,41 +155,7 @@ console.log(getFirstName('Mike Smith'));
 ```
 <hr>
 
-**Q5**
-```js
-const multiplier1 = {
-  numbers: [1,2],
-  multiplyBy: 3,
-  multiply(){    
-      const output = this.numbers.map(function(num){ // Not fat arrow function
-        console.log(this.multiplyBy); // undefine
-        return num * this.multiplyBy
-      });
-      return output;
-  }
-}
-multiplier1.multiply(); //?
 
-const multiplier2 = {
-  numbers: [1,2],
-  multiplyBy: 3,
-  multiply(){
-      var _self = this;   // Save "this" value HERE!!!
-      const output = this.numbers.map(function(num){ // Not fat arrow function
-        console.log(_self.multiplyBy); // undefine
-        return num * _self.multiplyBy
-      });
-      return output;
-  }
-}
-multiplier2.multiply(); //?
-```
-**Q5: Answer**
-- multiple1 is error because this is `undefine` inside map() callback function!
-```js
-console.log(multiplier1.multiply()); // [ NaN, NaN ] 
-console.log(multiplier2.multiply()); // [ 3, 6 ]
-```
 
 
 **Challenge2**
