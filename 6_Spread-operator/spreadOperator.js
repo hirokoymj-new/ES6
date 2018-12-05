@@ -1,3 +1,9 @@
+// Syntax
+// 1. For array literal
+
+
+// 2. For object literal  (new in ECMAScript 2018)
+
 // Copy of array
 const names = ['a', 'b'];
 const copy1 = names.slice();
@@ -5,6 +11,23 @@ const copy2 = [...names];
 console.log(names); 
 console.log(copy1);
 console.log(copy2);
+
+
+const user = {
+  name: 'Jen',
+  age: 24
+}
+console.log({...user});
+
+console.log({
+  ...user,
+  age: 27
+});
+
+const params = [a,b];
+const add = (...params) =>{
+
+}
 
 
 // Combine Arrays ES5
