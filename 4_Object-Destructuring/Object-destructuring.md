@@ -1,4 +1,4 @@
-# ES6 - Object destructuring with function paramters
+# ES6 - Object destructuring in function paramters
 
 
 **Example 1**
